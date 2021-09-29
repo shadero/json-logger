@@ -1,0 +1,7 @@
+docker run \
+	-it \
+	--rm \
+	-v $(cd $(dirname $0) && pwd)/bin/config.toml:/config.toml \
+	--name json-logger \
+	shadero/json-logger
+
